@@ -96,6 +96,7 @@ nav {
     width: fit-content;
     max-height: 0;
     overflow: hidden;
+    visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
 
@@ -114,6 +115,7 @@ nav {
 
 .menu-links.open {
     max-height: 300px;
+    visibility: visible;
 }
 
 .hamburger-icon.open span:first-child {

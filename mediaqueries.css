@@ -16,16 +16,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem;
   }
   .hamburger-menu {
     display: inline-block;
     margin-right: 1rem;
+    cursor: pointer;
   }
   .menu-links {
     position: absolute;
     top: 60px;
-    right: 0;
-    width: 100%;
+    width: 200px;
+    height: 250px;
     background-color: #fff;
     z-index: 1000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -101,7 +103,7 @@
   
   /* Seção Experiência */
   #experience .section__text__p1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   .experience-containers {
     flex-direction: column;
