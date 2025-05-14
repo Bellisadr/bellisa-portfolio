@@ -104,6 +104,7 @@
   /* Seção Experiência */
   #experience .section__text__p1 {
     margin-bottom: 1rem;
+    padding: 1rem;
   }
   .experience-containers {
     flex-direction: column;
