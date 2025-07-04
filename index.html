@@ -1,188 +1,321 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bellisa's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Bellisa D. Rodrigues</div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#experience">Exp./Skills</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </div>
+      <div class="logo">Bellisa D. Rodrigues</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#experience">Exp./Skills</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
     </nav>
     <nav id="hamburger-nav">
-        <div class="logo">Bellisa D. Rodrigues</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()"> <!-- toggleMenu means to open and close the menu -->
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                    <li><a href="#experience" onclick="toggleMenu()">Exp./Skills</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
-            </div>
+      <div class="logo">Bellisa D. Rodrigues</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <!-- toggleMenu means to open and close the menu -->
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
+        <div class="menu-links">
+          <li><a href="#experience" onclick="toggleMenu()">Exp./Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projetos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contato</a></li>
+        </div>
+      </div>
     </nav>
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Bellisa D. Rodrigues profile picture" />
+      <div class="section__pic-container">
+        <img
+          src="./assets/profile-pic.png"
+          alt="Bellisa D. Rodrigues profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Olá! Sou</p>
+        <h1 class="title">Bellisa</h1>
+        <p class="section__text__p2">Estudante de Design Gráfico e ADS.</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV - BELLISA DANGELO RODRIGUES.pdf')"
+          >
+            Download CV
+          </button>
+          <!-- This button is used to download the resume -->
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contato
+          </button>
+          <!-- This button is used to go to the contact section -->
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Olá! Sou</p>
-            <h1 class="title">Bellisa</h1>
-            <p class="section__text__p2">Estudante de Design Gráfico e ADS.</p>
-            <div class="btn-container">
-                <button
-                    class="btn btn-color-2" onclick="window.open('./assets/CV - BELLISA DANGELO RODRIGUES.pdf')">Download CV</button> <!-- This button is used to download the resume -->
-                <button class="btn btn-color-1" onclick="location.href='#contact'">Contato</button> <!-- This button is used to go to the contact section -->
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Meu LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/bellisa-dangelo-83619534a/'"
+          />
+          <!-- This icon is used to go to the LinkedIn profile -->
+          <img
+            src="./assets/github.png"
+            alt="Meu Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Bellisadr/'"
+          />
+          <!-- This icon is used to go to the Github profile -->
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <h1 class="title">Experiências/Skills</h1>
+      <p class="section__text__p1">
+        Unindo PIXELS e linhas de CÓDIGOS: ainda em fase "BETA"!
+      </p>
+      <div class="experience-details-container">
+        <div class="experience-containers">
+          <div class="details-container">
+            <h2 class="experience-subtitle">Frontend e ADS</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/html.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
                 </div>
-                <div id="socials-container">
-                    <img src="./assets/linkedin.png" alt="Meu LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/bellisa-dangelo-83619534a/'" /> <!-- This icon is used to go to the LinkedIn profile -->
-                    <img src="./assets/github.png" alt="Meu Github profile" class="icon" onclick="location.href='https://github.com/Bellisadr/'" /> <!-- This icon is used to go to the Github profile -->
+              </article>
+              <article>
+                <img
+                  src="./assets/css.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
                 </div>
-            </div>
-        </section>
-        <section id="experience">
-            <h1 class="title">Experiências/Skills</h1>
-            <p class="section__text__p1">Unindo PIXELS e linhas de CÓDIGOS: ainda em fase "BETA"!</p>
-            <div class="experience-details-container">
-                <div class="experience-containers">
-                    <div class="details-container">
-                        <h2 class="experience-subtitle">Frontend e ADS</h2>
-                        <div class="article-container">
-                         <article>
-                            <img src="./assets/html.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>HTML</h3>
-                            </div>
-                         </article>   
-                         <article>
-                            <img src="./assets/css.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>CSS</h3>
-                            </div>
-                         </article>   
-                         <article>
-                            <img src="./assets/js.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>JavaScript</h3>
-                            </div>
-                         </article>   
-                         <article>
-                            <img src="./assets/ux.ui.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>UX/UI</h3>
-                            </div>
-                         </article>     
-                        </div>
-                    </div>
-                    <div class="details-container">
-                        <h2 class="experience-subtitle">Design Gráfico</h2>
-                        <div class="article-container">
-                         <article>
-                            <img src="./assets/photoshop.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Photoshop</h3>
-                            </div>
-                         </article>   
-                         <article>
-                            <img src="./assets/express.canva.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Adobe Express/<br>Canva</h3>
-                            </div>
-                         </article>   
-                         <article>
-                            <img src="./assets/illustrator.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Adobe Illustrator</h3>
-                            </div>
-                         </article>   
-                         <article>
-                            <img src="./assets/figma.png" alt="Experience icon" class="icon" />
-                            <div>
-                                <h3>Figma</h3>
-                            </div>
-                         </article>     
-                        </div>
-                    </div>
+              </article>
+              <article>
+                <img src="./assets/js.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>JavaScript</h3>
                 </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/ux.ui.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UX/UI</h3>
+                </div>
+              </article>
             </div>
-            <div class="arrow-container">
-            <img src="./assets/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='./#projects'" />
+          </div>
+          <div class="details-container">
+            <h2 class="experience-subtitle">Design Gráfico</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/photoshop.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Photoshop</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/express.canva.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Express/<br />Canva</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/illustrator.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Adobe Illustrator</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/figma.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                </div>
+              </article>
             </div>
-        </section>
-       <section id="projects">
-        <p class="section__text__p2">Meus</p>
-    <h1 class="title">Projetos</h1>
-    <div class="projects-container">
+          </div>
+        </div>
+      </div>
+      <div class="arrow-container">
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="arrow"
+          onclick="location.href='./#projects'"
+        />
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p2">Meus</p>
+      <h1 class="title">Projetos</h1>
+      <div class="projects-container">
         <div class="project-card">
-            <img src="./assets/Projeto1 (2).png" alt="Visual do projeto de logo 1" class="project-img" />
-            <h2 class="project-title">Logomarca</h2>
-            <div class="project-btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://new.express.adobe.com/brands/urn:aaid:sc:US:bf0d785b-8687-4c45-afd2-482a196b5281/accept?promoid=3F8XBCZH&mv=other'">Ver projeto</button>
+          <img
+            src="./assets/Projeto1 (2).png"
+            alt="Visual do projeto de logo 1"
+            class="project-img"
+          />
+          <h2 class="project-title">Logomarca <br>Marcos&Ester</h2>
+          <div class="project-btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://github.com/Bellisadr/delicias-mineiras?tab=readme-ov-file'"
+            >
+              Ver projeto
+            </button>
+          </div>
         </div>
+        <div class="project-card">
+          <img
+            src="./assets/Marcos&Ester_website.png"
+            alt="Website produtos mineiros"
+            class="project-img"
+          />
+          <h2 class="project-title">Website Marcos&Ester</h2>
+          <div class="project-btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://new.express.adobe.com/brands/urn:aaid:sc:US:6bab1f3e-da8e-4fe2-b33b-49007b22e5f3/accept?promoid=3F8XBCZH&mv=other'"
+            >
+              Ver projeto
+            </button>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://bellisadr.github.io/delicias-mineiras/'"
+            >
+              Ver Website
+            </button>
+          </div>
         </div>
 
         <div class="project-card">
-            <img src="./assets/Projeto2.png" alt="Visual do projeto de logo 2" class="project-img" />
-            <h2 class="project-title">Brand Guideline</h2>
-            <div class="project-btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://new.express.adobe.com/brands/urn:aaid:sc:US:6bab1f3e-da8e-4fe2-b33b-49007b22e5f3/accept?promoid=3F8XBCZH&mv=other'">Ver projeto</button>
-        </div>
+          <img
+            src="./assets/Projeto2.png"
+            alt="Visual do projeto de logo 2"
+            class="project-img"
+          />
+          <h2 class="project-title">Brand Guideline</h2>
+          <div class="project-btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://new.express.adobe.com/brands/urn:aaid:sc:US:6bab1f3e-da8e-4fe2-b33b-49007b22e5f3/accept?promoid=3F8XBCZH&mv=other'"
+            >
+              Ver projeto
+            </button>
+          </div>
         </div>
 
         <div class="project-card">
-            <img src="./assets/Projeto3.png" alt="Wireframes do projeto Excalidraw" class="project-img" />
-            <h2 class="project-title">Wireframes Excalidraw</h2>
-            <div class="project-btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://excalidraw.com/#json=...'">Ver projeto</button>
+          <img
+            src="./assets/Projeto3.png"
+            alt="Wireframes do projeto Excalidraw"
+            class="project-img"
+          />
+          <h2 class="project-title">Wireframes Excalidraw</h2>
+          <div class="project-btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://excalidraw.com/#json=...'"
+            >
+              Ver projeto
+            </button>
+          </div>
         </div>
-        </div>
-    </div>
-    <div class="arrow-container">
-        <img src="./assets/arrow.png" alt="Arrow icon" class="arrow" onclick="location.href='./#contact'" />
-    </div>
-</section>
+      </div>
+      <div class="arrow-container">
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="arrow"
+          onclick="location.href='./#contact'"
+        />
+      </div>
+    </section>
     <section id="contact">
-        <p class="section__text__p1">Vamos conversar?</p>
-        <h1 class="title">Entrar em contato</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon"/>
-                <p><a href="mailto:bellisadr@gmail.com">E-mail</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin (2).png" alt="LinkedIn icon" class="icon contact-icon"/>
-                <p><a href="https://www.linkedin.com/in/bellisa-dangelo-83619534a/">LinkedIn</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/whatsApp.png" alt="WhatsApp icon" class="icon contact-icon"/>
-                <p><a href="https://api.whatsapp.com/send?phone=5547988075465">WhatsApp</a></p>
-            </div>
+      <p class="section__text__p1">Vamos conversar?</p>
+      <h1 class="title">Entrar em contato</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon"
+          />
+          <p><a href="mailto:bellisadr@gmail.com">E-mail</a></p>
         </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin (2).png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/bellisa-dangelo-83619534a/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/whatsApp.png"
+            alt="WhatsApp icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://api.whatsapp.com/send?phone=5547988075465"
+              >WhatsApp</a
+            >
+          </p>
+        </div>
+      </div>
     </section>
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#experience">Exp./Skills</a></li>
-                    <li><a href="#projects">Projetos</a></li>
-                    <li><a href="#contact">Contato</a></li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2025 Bellisa D. Rodrigues. All Rights Reserved.</p>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#experience">Exp./Skills</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Bellisa D. Rodrigues. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
